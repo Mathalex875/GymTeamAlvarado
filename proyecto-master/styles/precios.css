@@ -1,84 +1,86 @@
 /* Reset básico */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Elimina el margen predeterminado de todos los elementos */
+    padding: 0; /* Elimina el relleno predeterminado de todos los elementos */
+    box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total del elemento */
 }
 
+/* Estilo del cuerpo */
 body {
-    background-color: #0e0e0e;
-    color: #ffffff;
-    font-family: 'Segoe UI', sans-serif;
-    padding: 20px;
+    background-color: #0e0e0e; /* Color de fondo oscuro */
+    color: #ffffff; /* Color de texto blanco */
+    font-family: 'Segoe UI', sans-serif; /* Fuente principal */
+    padding: 20px; /* Espaciado interno del cuerpo */
 }
 
+/* Contenedor principal */
 .container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
+    max-width: 1000px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 20px; /* Espaciado interno del contenedor */
 }
 
 /* Encabezado */
 header {
-    text-align: center;
-    margin-bottom: 30px;
-    border-bottom: 2px solid #ff2d2d;
+    text-align: center; /* Centra el texto del encabezado */
+    margin-bottom: 30px; /* Margen inferior */
+    border-bottom: 2px solid #ff2d2d; /* Línea inferior roja */
 }
 
 header h1 {
-    color: #ff2d2d;
-    font-size: 2rem;
-    display: inline-block;
-    padding-bottom: 8px;
+    color: #ff2d2d; /* Color del texto del encabezado */
+    font-size: 2rem; /* Tamaño de fuente */
+    display: inline-block; /* Muestra el texto como un bloque en línea */
+    padding-bottom: 8px; /* Espaciado inferior */
 }
 
 /* Secciones */
 section {
-    background-color: #1c1c1c;
-    padding: 25px;
-    margin-bottom: 25px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(255, 45, 45, 0.4);
+    background-color: #1c1c1c; /* Fondo oscuro */
+    padding: 25px; /* Espaciado interno */
+    margin-bottom: 25px; /* Margen inferior */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 20px rgba(255, 45, 45, 0.4); /* Sombra roja */
 }
 
 h2 {
-    color: #ff2d2d;
-    margin-bottom: 10px;
+    color: #ff2d2d; /* Color del texto de los títulos */
+    margin-bottom: 10px; /* Margen inferior */
 }
 
 p {
-    margin: 10px 0;
-    color: #dddddd;
+    margin: 10px 0; /* Margen superior e inferior */
+    color: #dddddd; /* Color del texto */
 }
 
 ul {
-    margin-left: 20px;
-    margin-bottom: 15px;
+    margin-left: 20px; /* Margen izquierdo */
+    margin-bottom: 15px; /* Margen inferior */
 }
 
 ul li {
-    margin-bottom: 8px;
+    margin-bottom: 8px; /* Margen inferior de los elementos de la lista */
 }
 
 strong {
-    color: #ffffff;
+    color: #ffffff; /* Color del texto en negrita */
 }
 
-/* Imagen */
+/* Contenedor de imágenes */
 .img-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    display: flex; /* Usa flexbox para centrar */
+    justify-content: center; /* Centra horizontalmente */
+    margin-bottom: 30px; /* Margen inferior */
+    margin-top: 30px; /* Margen superior */
 }
 
 img {
-    width: 100%;
-    max-width: 600px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    height: auto;
-    border-radius: 8px;
+    width: 100%; /* Ancho completo */
+    max-width: 600px; /* Ancho máximo */
+    margin-top: 10px; /* Margen superior */
+    margin-bottom: 10px; /* Margen inferior */
+    height: auto; /* Altura automática */
+    border-radius: 8px; /* Bordes redondeados */
     box-shadow: 0 0 10px #888888; /* Sombra gris */
     transition: transform 0.3s ease; /* Transición suave al escalar */
 }
@@ -104,61 +106,63 @@ a[href*="index.html"] {
 }
 
 a[href*="index.html"]:hover {
-    background-color: #cc0000;
+    background-color: #cc0000; /* Cambia el fondo al pasar el cursor */
 }
 
-/* Footer */
+/* Pie de página */
 footer {
+    background-color: #111;
     text-align: center;
-    margin-top: 30px;
-    color: #aaaaaa;
+    padding: 20px;
+    color: #999;
+    margin-top: 40px;
 }
 
-/* Responsive */
+/* Estilos responsivos */
 @media (max-width: 768px) {
     section {
-        padding: 15px;
+        padding: 15px; /* Reduce el espaciado interno */
     }
 
     header h1 {
-        font-size: 1.5rem;
+        font-size: 1.5rem; /* Reduce el tamaño de la fuente */
     }
 
     img {
-        max-width: 100%;
-        height: auto;
+        max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+        height: auto; /* Altura automática */
     }
 
     .container {
-        padding: 10px;
+        padding: 10px; /* Reduce el espaciado interno */
     }
 
     ul {
-        margin-left: 10px;
+        margin-left: 10px; /* Reduce el margen izquierdo */
     }
 
     a[href*="index.html"] {
-        padding: 8px 15px;
-        font-size: 0.9rem;
+        padding: 8px 15px; /* Reduce el espaciado interno */
+        font-size: 0.9rem; /* Reduce el tamaño de la fuente */
     }
 }
 
 @media (max-width: 480px) {
     header h1 {
-        font-size: 1.2rem;
+        font-size: 1.2rem; /* Reduce aún más el tamaño de la fuente */
     }
 
     section {
-        padding: 10px;
+        padding: 10px; /* Reduce el espaciado interno */
     }
 
     img {
-        max-width: 100%;
-        height: auto;
+        max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+        height: auto; /* Altura automática */
     }
 
     a[href*="index.html"] {
-        padding: 6px 10px;
-        font-size: 0.8rem;
+        padding: 6px 10px; /* Reduce aún más el espaciado interno */
+        font-size: 0.8rem; /* Reduce aún más el tamaño de la fuente */
     }
 }

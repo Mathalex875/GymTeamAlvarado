@@ -1,78 +1,79 @@
 /* Reset general */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Elimina el margen predeterminado de todos los elementos */
+    padding: 0; /* Elimina el relleno predeterminado de todos los elementos */
+    box-sizing: border-box; /* Incluye el borde y el relleno en el tamaño total del elemento */
 }
 
+/* Estilo del cuerpo */
 body {
-    background-color: #0e0e0e;
-    color: #fff;
-    font-family: 'Segoe UI', sans-serif;
-    padding: 20px;
+    background-color: #0e0e0e; /* Color de fondo negro */
+    color: #fff; /* Color de texto blanco */
+    font-family: 'Segoe UI', sans-serif; /* Fuente principal */
+    padding: 20px; /* Espaciado interno del cuerpo */
 }
 
 /* Encabezado */
 header {
-    text-align: center;
-    margin-bottom: 30px;
-    border-bottom: 2px solid #ff2d2d;
+    text-align: center; /* Centra el texto del encabezado */
+    margin-bottom: 30px; /* Margen inferior del encabezado */
+    border-bottom: 2px solid #ff2d2d; /* Línea roja debajo del encabezado */
 }
 
 header h1 {
-    color: #ff2d2d;
-    font-size: 2rem;
-    display: inline-block;
-    padding-bottom: 8px;
+    color: #ff2d2d; /* Color rojo para el título */
+    font-size: 2rem; /* Tamaño de fuente del título */
+    display: inline-block; /* Muestra el título como un bloque en línea */
+    padding-bottom: 8px; /* Espaciado debajo del título */
 }
 
 /* Secciones */
 section {
-    max-width: 1000px;
-    margin: 0 auto;
+    max-width: 1000px; /* Ancho máximo de la sección */
+    margin: 0 auto; /* Centra horizontalmente la sección */
     background-color: #1c1c1c; /* Color de fondo de la sección */
-    padding: 25px;
-    margin-bottom: 25px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+    padding: 25px; /* Espaciado interno de la sección */
+    margin-bottom: 25px; /* Margen inferior de la sección */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.4); /* Sombra roja */
 }
 
 h2 {
-    color: #ff2d2d;
-    margin-bottom: 10px;
+    color: #ff2d2d; /* Color rojo para los subtítulos */
+    margin-bottom: 10px; /* Margen inferior de los subtítulos */
 }
 
 h3 {
-    color: #ff4c4c;
-    margin-top: 15px;
+    color: #ff4c4c; /* Color rojo más claro para los subtítulos secundarios */
+    margin-top: 15px; /* Margen superior de los subtítulos secundarios */
 }
 
 p, ul {
-    margin-bottom: 15px;
-    color: #dddddd;
+    margin-bottom: 15px; /* Margen inferior para párrafos y listas */
+    color: #dddddd; /* Color gris claro para el texto */
 }
 
 ul {
-    margin-left: 20px;
+    margin-left: 20px; /* Margen izquierdo para listas */
 }
 
 ul li {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Margen inferior para elementos de lista */
 }
 
 /* Imágenes */
 .img-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    display: flex; /* Usa flexbox para el contenedor de imágenes */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    margin-bottom: 30px; /* Margen inferior del contenedor */
+    margin-top: 30px; /* Margen superior del contenedor */
 }
 
 img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    border-radius: 8px;
+    width: 100%; /* Ancho completo de la imagen */
+    max-width: 600px; /* Ancho máximo de la imagen */
+    height: auto; /* Ajusta la altura automáticamente */
+    border-radius: 8px; /* Bordes redondeados de la imagen */
     box-shadow: 0 0 10px #888888; /* Sombra gris */
     transition: transform 0.3s ease; /* Transición suave al escalar */
 }
@@ -103,33 +104,34 @@ a[href*="index.html"]:hover {
 
 /* Footer */
 footer {
+    background-color: #111;
     text-align: center;
+    padding: 20px;
+    color: #999;
     margin-top: 40px;
-    font-size: 0.9rem;
-    color: #aaaaaa;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
     section {
-        padding: 20px;
+        padding: 20px; /* Reduce el espaciado interno de la sección */
     }
 
     header h1 {
-        font-size: 1.6rem;
+        font-size: 1.6rem; /* Reduce el tamaño de fuente del título */
     }
 
     h2 {
-        font-size: 1.4rem;
+        font-size: 1.4rem; /* Reduce el tamaño de fuente de los subtítulos */
     }
 
     h3 {
-        font-size: 1.2rem;
+        font-size: 1.2rem; /* Reduce el tamaño de fuente de los subtítulos secundarios */
     }
 
     img {
-        max-width: 100%;
-        height: auto;
+        max-width: 100%; /* Ajusta el ancho máximo de la imagen */
+        height: auto; /* Ajusta la altura automáticamente */
     }
 
     a[href*="index.html"] {
@@ -140,26 +142,27 @@ footer {
 
 @media (max-width: 480px) {
     body {
-        padding: 10px;
+        padding: 10px; /* Reduce el espaciado interno del cuerpo */
     }
 
     header h1 {
-        font-size: 1.4rem;
+        font-size: 1.4rem; /* Reduce el tamaño de fuente del título */
     }
 
     h2 {
-        font-size: 1.2rem;
+        font-size: 1.2rem; /* Reduce el tamaño de fuente de los subtítulos */
     }
 
     h3 {
-        font-size: 1rem;
+        font-size: 1rem; /* Reduce el tamaño de fuente de los subtítulos secundarios */
     }
 
     section {
-        padding: 15px;
+        padding: 15px; /* Reduce el espaciado interno de la sección */
     }
 
     a[href*="index.html"] {
-        font-size: 0.9rem; /* Reduce el tamaño del texto */
+        font-size: 0.9rem; /* Reduce el tamaño del texto del enlace */
     }
 }
+

@@ -107,10 +107,11 @@ a {
 
 /* Estilo del pie de página */
 footer {
-    margin-top: 40px; /* Margen superior */
-    text-align: center; /* Centra el texto */
-    color: #999; /* Color gris claro */
-    font-size: 0.9rem; /* Tamaño de fuente pequeño */
+    background-color: #111;
+    text-align: center;
+    padding: 20px;
+    color: #999;
+    margin-top: 40px;
 }
 
 /* Estilos responsivos */
