@@ -1,0 +1,168 @@
+/* Reset básico */
+* {
+    margin: 0; /* Elimina el margen predeterminado de todos los elementos */
+    padding: 0; /* Elimina el relleno predeterminado de todos los elementos */
+    box-sizing: border-box; /* Cambia el modelo de caja para incluir el borde y el relleno en el tamaño total */
+}
+
+/* Estilo del cuerpo */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define la fuente principal */
+    line-height: 1.6; /* Define la altura de línea */
+    background-color: #0e0e0e; /* Color de fondo oscuro */
+    color: #ffffff; /* Color de texto blanco */
+    padding: 20px; /* Espaciado interno del cuerpo */
+}
+
+/* Sección principal */
+section {
+    max-width: 1000px; /* Ancho máximo de la sección */
+    margin: 0 auto; /* Centra la sección horizontalmente */
+    background-color: #1c1c1c; /* Color de fondo de la sección */
+    padding: 30px; /* Espaciado interno de la sección */
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.4); /* Sombra roja alrededor de la sección */
+}
+
+/* Títulos */
+h2, h3 {
+    color: #ff2d2d; /* Color rojo para los títulos */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+h2 {
+    font-size: 2rem; /* Tamaño de fuente para h2 */
+    border-bottom: 2px solid #ff2d2d; /* Línea inferior roja */
+    padding-bottom: 5px; /* Espaciado inferior interno */
+}
+
+h3 {
+    font-size: 1.5rem; /* Tamaño de fuente para h3 */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+/* Párrafos */
+p {
+    margin-bottom: 15px; /* Espaciado inferior */
+    color: #e0e0e0; /* Color de texto gris claro */
+}
+
+/* Listas */
+ul {
+    margin-left: 20px; /* Margen izquierdo */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+ul li {
+    margin-bottom: 8px; /* Espaciado inferior entre elementos de lista */
+}
+
+/* Enlaces */
+a {
+    color: #ff4c4c; /* Color rojo para enlaces */
+    text-decoration: none; /* Sin subrayado */
+}
+
+a:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+    color: #ffffff; /* Cambia a blanco al pasar el cursor */
+}
+
+/* Botón de regreso */
+a[href*="index.html"] {
+    display: block; /* Muestra el enlace como un bloque */
+    margin: 20px auto; /* Margen superior e inferior y centra horizontalmente */
+    background-color: #ff0000; /* Fondo rojo */
+    color: white; /* Texto blanco */
+    padding: 10px 20px; /* Espaciado interno */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background 0.3s; /* Transición suave del fondo */
+    text-align: center; /* Asegura que el texto esté centrado */
+    width: fit-content; /* Ajusta el ancho al contenido */
+}
+
+a[href*="index.html"]:hover {
+    background-color: #cc0000; /* Cambia el fondo a un rojo más oscuro */
+}
+
+/* Contenedor para centrar y adaptar el mapa */
+.map-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.map-container iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    border: none;
+    border-radius: 8px;
+}
+
+p:last-of-type {
+    text-align: center; /* Centra el texto del último párrafo */
+}
+
+/* Footer */
+footer {
+    text-align: center; /* Centra el texto del pie de página */
+    margin-top: 40px; /* Margen superior */
+    color: #aaaaaa; /* Color de texto gris claro */
+    font-size: 0.9rem; /* Tamaño de fuente reducido */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    section {
+        padding: 20px; /* Reduce el espaciado interno en pantallas pequeñas */
+    }
+
+    h2 {
+        font-size: 1.6rem; /* Reduce el tamaño de fuente de h2 */
+    }
+
+    h3 {
+        font-size: 1.3rem; /* Reduce el tamaño de fuente de h3 */
+    }
+
+    p {
+        font-size: 0.9rem; /* Reduce el tamaño de fuente de los párrafos */
+    }
+
+    ul {
+        margin-left: 10px; /* Reduce el margen izquierdo de las listas */
+    }
+
+    a[href*="index.html"] {
+        padding: 8px 16px; /* Reduce el espaciado interno del botón */
+        font-size: 0.9rem; /* Reduce el tamaño de fuente del botón */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px; /* Reduce el espaciado interno del cuerpo */
+    }
+
+    section {
+        padding: 15px; /* Ajusta el espaciado interno para pantallas muy pequeñas */
+    }
+
+    h2 {
+        font-size: 1.4rem; /* Ajusta el tamaño de fuente de h2 */
+    }
+
+    h3 {
+        font-size: 1.2rem; /* Ajusta el tamaño de fuente de h3 */
+    }
+
+    p {
+        font-size: 0.8rem; /* Ajusta el tamaño de fuente de los párrafos */
+    }
+
+    a[href*="index.html"] {
+        padding: 6px 12px; /* Ajusta el espaciado interno del botón */
+        font-size: 0.8rem; /* Ajusta el tamaño de fuente del botón */
+    }
+}

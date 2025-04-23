@@ -1,0 +1,165 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0e0e0e;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 20px;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #ff2d2d;
+}
+
+header h1 {
+    color: #ff2d2d;
+    font-size: 2rem;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+/* Secciones */
+section {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #1c1c1c; /* Color de fondo de la sección */
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+}
+
+h2 {
+    color: #ff2d2d;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #ff4c4c;
+    margin-top: 15px;
+}
+
+p, ul {
+    margin-bottom: 15px;
+    color: #dddddd;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Imágenes */
+.img-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #888888; /* Sombra gris */
+    transition: transform 0.3s ease; /* Transición suave al escalar */
+}
+
+img:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la imagen al pasar el cursor */
+    filter: brightness(1.1); /* Aumenta el brillo de la imagen al pasar el cursor */
+    transition: transform 0.3s ease; /* Transición suave al escalar */
+}
+
+/* Enlace de regreso */
+a[href*="index.html"] {
+    display: block; /* Muestra el enlace como un bloque */
+    margin: 20px auto; /* Margen superior e inferior y centra horizontalmente */
+    background-color: #ff0000; /* Fondo rojo */
+    color: white; /* Texto blanco */
+    padding: 10px 20px; /* Espaciado interno */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background 0.3s; /* Transición suave del fondo */
+    text-align: center; /* Asegura que el texto esté centrado */
+    width: fit-content; /* Ajusta el ancho al contenido */
+}
+
+a[href*="index.html"]:hover {
+    background-color: #cc0000; /* Cambia el fondo a un rojo más oscuro */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #aaaaaa;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    section {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    a[href*="index.html"] {
+        width: 100%; /* Ajusta el ancho al 100% */
+        padding: 10px; /* Reduce el espaciado interno */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    a[href*="index.html"] {
+        font-size: 0.9rem; /* Reduce el tamaño del texto */
+    }
+}

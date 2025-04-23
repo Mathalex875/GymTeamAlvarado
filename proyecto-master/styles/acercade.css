@@ -1,0 +1,158 @@
+/* Reset */
+* {
+    margin: 0; /* Elimina el margen predeterminado de todos los elementos */
+    padding: 0; /* Elimina el relleno predeterminado de todos los elementos */
+    box-sizing: border-box; /* Cambia el modelo de caja para incluir el padding y el borde en el tamaño total */
+}
+
+/* Estilo general del cuerpo */
+body {
+    background-color: #000; /* Color de fondo negro */
+    color: #fff; /* Color de texto blanco */
+    font-family: 'Arial', sans-serif; /* Fuente predeterminada */
+    line-height: 1.6; /* Altura de línea */
+    padding: 20px; /* Espaciado interno */
+}
+
+/* Estilo del contenedor principal */
+#acerca {
+    max-width: 1000px; /* Ancho máximo del contenedor */
+    margin: auto; /* Centra el contenedor horizontalmente */
+    padding: 20px; /* Espaciado interno */
+    background-color: #1c1c1c; /* Color de fondo de la sección */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.4); /* Sombra roja */
+}
+
+/* Alineación del título */
+#acerca h2 {
+    text-align: center; /* Centra el texto del título */
+    border-bottom: 2px solid #ff2d2d;
+    font-size: 2rem;
+}
+
+/* Estilo de encabezados */
+h2, h3 {
+    color: #ff2d2d; /* Color rojo */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+/* Estilo de listas */
+ul {
+    margin-top: 15px; /* Espaciado superior */
+    margin-bottom: 15px; /* Espaciado inferior */
+    padding-left: 20px; /* Espaciado interno izquierdo */
+}
+
+/* Estilo de elementos de lista */
+ul li {
+    margin-bottom: 15px; /* Espaciado inferior */
+    margin-top: 15px; /* Espaciado superior */
+    padding-left: 5px; /* Espaciado interno izquierdo */
+}
+
+/* Estilo de párrafos */
+p {
+    margin-bottom: 15px; /* Espaciado inferior */
+    text-align: justify; /* Justifica el texto */
+}
+
+/* Estilo de imágenes */
+img {
+    max-width: 100%; /* Ancho máximo del 100% */
+    height: auto; /* Altura automática */
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 20px 0; /* Margen superior e inferior */
+    box-shadow: 0 0 10px #888888; /* Sombra gris */
+    transition: transform 0.3s ease; /* Transición suave al escalar */
+}
+
+/* Efecto hover en imágenes */
+img:hover {
+    transform: scale(1.1); /* Escala la imagen al pasar el mouse */
+    filter: brightness(1.1); /* Aumenta el brillo de la imagen al pasar el cursor */
+    transition: transform 0.3s ease; /* Transición suave al escalar */
+}
+
+/* Estilo de enlaces */
+a {
+    display: inline-block; /* Muestra el enlace como un bloque en línea */
+    margin-top: 20px; /* Margen superior */
+    background-color: #ff0000; /* Fondo rojo */
+    color: white; /* Texto blanco */
+    padding: 10px 20px; /* Espaciado interno */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background 0.3s; /* Transición suave del fondo */
+}
+
+/* Alineación del último párrafo */
+p:last-of-type {
+    text-align: center; /* Centra el texto */
+}
+
+/* Efecto hover en enlaces */
+a:hover {
+    background-color: #cc0000; /* Cambia el fondo a un rojo más oscuro */
+}
+
+/* Estilo adicional para enlaces */
+a {
+    width: 200px; /* Ancho fijo */
+    height: 50px; /* Altura fija */
+    display: block; /* Muestra el enlace como un bloque */
+    margin: 20px auto; /* Centra el enlace horizontalmente */
+    text-align: center; /* Centra el texto dentro del enlace */
+}
+
+/* Estilo del pie de página */
+footer {
+    margin-top: 40px; /* Margen superior */
+    text-align: center; /* Centra el texto */
+    color: #999; /* Color gris claro */
+    font-size: 0.9rem; /* Tamaño de fuente pequeño */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Reduce el espaciado interno */
+    }
+
+    #acerca {
+        padding: 15px; /* Reduce el espaciado interno del contenedor */
+    }
+
+    a {
+        width: 100%; /* Ancho completo */
+        text-align: center; /* Centra el texto */
+    }
+
+    img {
+        width: 100%; /* Ancho completo */
+        height: auto; /* Altura automática */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.9rem; /* Reduce el tamaño de fuente */
+    }
+
+    h2, h3 {
+        font-size: 1.5rem; /* Ajusta el tamaño de los encabezados */
+    }
+
+    #acerca {
+        padding: 10px; /* Reduce aún más el espaciado interno */
+    }
+
+    a {
+        padding: 8px 15px; /* Ajusta el espaciado interno del enlace */
+        font-size: 0.9rem; /* Reduce el tamaño de fuente del enlace */
+    }
+
+    img {
+        margin: 10px 0; /* Reduce el margen superior e inferior */
+    }
+}

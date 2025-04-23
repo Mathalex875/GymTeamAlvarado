@@ -1,0 +1,326 @@
+/* Clase principal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para el cuerpo del documento */
+body {
+    font-family: 'Lucida-Sans', sans-serif, Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Estilos para el encabezado */
+header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Añade un color de fondo semitransparente */
+    background-blend-mode: overlay; /* Mezcla el color de fondo con la imagen */
+    background-image: url(../img/background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center fixed;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100vh; /* Ajusta la altura al tamaño de la pantalla */
+}
+
+/* Estilos para barra de menú */
+header .menu {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f00000;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 4px 6px rgb(42, 42, 42);
+}
+
+/* Estilos para los enlaces del menú */
+header .menu a {
+    color: #000000;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+/* Efecto hover en los enlaces del menú */
+header .menu a:hover {
+    text-decoration: underline;
+    text-decoration-color: #3d3d3d;
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+    transition: color 1s ease, text-shadow 1s ease;
+}
+
+/* Estilos del título en el encabezado */
+header p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #f4eded;
+    font-style: italic;
+}
+
+/* Estilos para la sección de bienvenida */
+.bienvenida {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Estilos para el título principal */
+.titulo {
+    font-size: 2.5rem;
+    color: #ebe1e1;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el logo principal */
+.logo {
+    width: 300px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    height: auto;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 1s ease-out forwards;
+}
+
+/* Animación para el logo */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos para el contenido principal */
+section {
+    padding: 10px 20px;
+    max-width: 900px;
+    margin: auto;
+    text-align: justify;
+}
+
+/* Estilos para los párrafos dentro de las secciones */
+section p {
+    font-size: 1.1rem;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los encabezados secundarios */
+h2 {
+    color: #ff0000;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* Estilos para listas no ordenadas */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Estilos para los elementos de lista */
+ul li {
+    background-color: #111;
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 5px solid #ff0000;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos para el formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 700px;
+    margin-top: 40px;
+    margin: auto;
+    box-shadow: 0px 0px 25px black;
+    font-size: 16px;
+    color: #fff;
+    background-color: #212121;
+    padding: 20px 15px;
+    border-radius: 8px;
+}
+
+/* Estilos para los campos de formulario */
+input, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 10px;
+    border: 1px solid #292828;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #000000;
+    border-left: solid 5px #d50404;
+    border-radius: 5px;
+}
+
+/* Estilos específicos para el campo de texto */
+textarea {
+    min-width: 100%;
+    resize: vertical;
+    min-height: 100px;
+    max-height: 150px;
+    font-family: sans-serif;
+}
+
+/* Estilos para los botones */
+button {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+    font-size: 16px;
+}
+
+/* Efecto hover en los botones */
+button:hover {
+    background-color: #cc0000;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #111;
+    text-align: center;
+    padding: 20px;
+    color: #999;
+    margin-top: 40px;
+}
+
+/* Media Queries para dispositivos pequeños */
+@media (max-width: 768px) {
+    /* Ajustes para el encabezado */
+    header {
+        height: auto;
+        padding: 10px;
+    }
+
+    /* Ajustes para la barra de menú */
+    header .menu {
+        padding: 10px;
+        text-align: center;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    /* Ajustes para los enlaces del menú */
+    header .menu a {
+        display: block;
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    /* Ajustes para el título principal */
+    .titulo {
+        font-size: 2rem;
+    }
+
+    /* Ajustes para el logo */
+    .logo {
+        width: 200px;
+    }
+
+    /* Ajustes para las secciones */
+    section {
+        padding: 15px;
+    }
+
+    /* Ajustes para los párrafos dentro de las secciones */
+    section p {
+        font-size: 1rem;
+    }
+
+    /* Ajustes para los encabezados secundarios */
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Ajustes para los elementos de lista */
+    ul li {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    /* Ajustes para el formulario */
+    form {
+        padding: 15px 10px;
+    }
+
+    /* Ajustes para los campos de formulario */
+    input, textarea {
+        font-size: 14px;
+    }
+
+    /* Ajustes para los botones */
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    /* Ajustes para el pie de página */
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes adicionales para pantallas muy pequeñas */
+    header .menu a {
+        font-size: 14px;
+    }
+
+    .titulo {
+        font-size: 1.8rem;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    section p {
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    ul li {
+        font-size: 0.8rem;
+        padding: 6px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
